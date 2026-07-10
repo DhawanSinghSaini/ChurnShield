@@ -1,0 +1,29 @@
+{
+  "name": "churnshield-backend",
+  "version": "1.0.0",
+  "description": "Express.js API for ChurnShield",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "worker": "node workers/batchWriter.js",
+    "dev:server": "node --watch server.js",
+    "dev:worker": "node --watch workers/batchWriter.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:worker\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^4.4.1",
+    "nodemailer": "^9.0.1",
+    "pdfkit": "^0.19.1",
+    "pg": "^8.11.5",
+    "redis": "^4.6.13"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
