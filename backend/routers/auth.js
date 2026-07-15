@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../config/db');
 const { requireAuth, requireRole } = require('../middleware/auth');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'super_secret_jwt_token_key_change_me_123';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // 1. POST /api/auth/login
 router.post('/login', async (req, res) => {
