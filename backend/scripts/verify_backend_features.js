@@ -3,7 +3,7 @@ const redisClient = require('../config/redis');
 const { execSync } = require('child_process');
 const path = require('path');
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://churnshield-7we8.onrender.com';
 let token = '';
 let customerId = '';
 let testBusinessId = '';
