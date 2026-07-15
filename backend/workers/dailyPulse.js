@@ -151,7 +151,7 @@ Date: ${new Date().toDateString()}
           ${newAlertsHtml}
 
           <div style="margin-top: 32px; text-align: center;">
-            <a href="http://localhost:8000/api/overview/pdf-report" style="background: #6366f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">Download Executive PDF Summary</a>
+            <a href="https://churnshield-7we8.onrender.com/api/overview/pdf-report" style="background: #6366f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">Download Executive PDF Summary</a>
           </div>
         </div>
       `;
