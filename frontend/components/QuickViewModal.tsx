@@ -23,7 +23,7 @@ export default function QuickViewModal({ onClose }: Props) {
     const biz = DEMO_BUSINESSES[selected];
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/login`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: biz.email, password: biz.password })
