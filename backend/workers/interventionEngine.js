@@ -106,7 +106,7 @@ async function runInterventionEngine() {
           ${reasonsHtml}
           
           <div style="margin-top: 32px; text-align: center;">
-            <a href="http://localhost:3000/dashboard/customers/${customer.customer_id}" style="background: #6366f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">View Customer Profile</a>
+            <a href="https://churn-shield-lime.vercel.app/dashboard/customers/${customer.customer_id}" style="background: #6366f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">View Customer Profile</a>
           </div>
         </div>
       `;
